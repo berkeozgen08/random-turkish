@@ -12,10 +12,5 @@ public class RandomTurkishController {
 	public String getWord(@RequestParam(value = "count", defaultValue = "1") int count) {
 		return RandomTurkish.getWord(count);
 	}
-
-	@RequestMapping("/error")
-	public String handleError() {
-		return "{\"message\": \"Not Found\", \"status\": \"404\"}";
-	}
-
+	
 }
