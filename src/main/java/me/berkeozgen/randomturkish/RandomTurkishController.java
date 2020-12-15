@@ -12,5 +12,10 @@ public class RandomTurkishController {
 	public String getWord(@RequestParam(value = "count", defaultValue = "1") int count) {
 		return RandomTurkish.getWord(count);
 	}
-	
+
+	@RequestMapping(method = GET, value = "/all", produces = {"application/json"})
+	public String getAll() {
+		return RandomTurkish.getAll();
+	}
+
 }

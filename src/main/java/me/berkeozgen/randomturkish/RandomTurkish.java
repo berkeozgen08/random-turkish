@@ -33,4 +33,8 @@ public class RandomTurkish {
 		return new JSONArray(arr).toString();
 	}
 
+	public static String getAll() {
+		return new JSONArray(list).toString();
+	}
+
 }
